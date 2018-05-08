@@ -48,12 +48,18 @@ app.get("/about",(req,res) => {
     });
 });
 
+app.get("/projects",(req,res) => {
+    res.render("projects.hbs", {
+        pageTitle: "Projects Page"
+    });
+});
+
 app.get("/bad",(req,res) => {
     res.send({
         errorMessage:"Unable to handle request"
     });
 });
 
-app.listen(3001, () => {
+app.listen(3000, () => {
     console.log("Server is up in port 3000");
 });
