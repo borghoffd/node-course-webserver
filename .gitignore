@@ -1,0 +1,5 @@
+.idea/
+node_modules/
+git-commands
+package-lock.json
+server.log
